@@ -1,6 +1,6 @@
-.hide{
+.hideElement{
   visibility: hidden;
 }
-.show{
+.showElement{
   visibility: show;
 }
