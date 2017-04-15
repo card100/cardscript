@@ -6,7 +6,7 @@ if (!document.getElementById(CSSelement))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = './stylesheet.css';
+    link.href = './style/stylesheet.css';
     link.media = 'all';
     head.appendChild(link);
 }
