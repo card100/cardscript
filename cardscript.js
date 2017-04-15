@@ -1,15 +1,11 @@
-var cssId = 'CSSelement';
-if (!document.getElementById(CSSelement))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = './style/stylesheet.css';
-    link.media = 'all';
-    head.appendChild(link);
-}
+// Loads jQ
+var script = document.createElement('script');
+script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+// Loads CSS
+$('head').append('<link rel="stylesheet" type="text/css" href="./style/stylesheet.css">');
 
 //Hides and Shows
 hideElement(){
