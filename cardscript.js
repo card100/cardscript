@@ -14,6 +14,7 @@ if (!document.getElementById(cssId))
 var c = (function() {
   
   return {
+      //Test Call
     test: function() {
       console.log('CardScript is working');
     }
