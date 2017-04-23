@@ -11,7 +11,7 @@ if (!document.getElementById(cssId))
     head.appendChild(link);
 }
 
-function c = (function() {
+var c = (function() {
   
   return {
     test: function() {
