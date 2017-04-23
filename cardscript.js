@@ -1,19 +1,21 @@
-
-// Loads jQ
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
-// Loads CSS
-$('head').append('<link rel="stylesheet" type="text/css" href="./style/stylesheet.css">');
-
-//Hides and Shows
-hideElement(){
-  document.getElementByClassName('hideElement').classList.add('hideElement');
-  document.getElementByClassName('hideElement').classList.remove('showElement');
+var cssId = 'CSS';
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = './style/stylesheet.css';
+    link.media = 'all';
+    head.appendChild(link);
 }
-showElement(){
-  document.getElementByClassName('showElement').classList.add('showElement');
-  document.getElementByClassName('showElement').classList.remove('hideElement');
-}
+
+function c = (function() {
+  
+  return {
+    test: function() {
+      console.log('CardScript is working');
+    }
+  };
+})();
